@@ -103,5 +103,22 @@ Content-Type: application/json
 {
     "roomName" : "Bedroom 1",
     "quanlity" : 1,
-    "type" : "LEAVE"
+    "type" : "JOIN"
+}
+
+
+###
+post http://45.76.154.43:5000/api/wheather/change
+Content-Type: application/json
+
+{
+   "outSky" : "sunny"
+}
+
+###
+post http://45.76.154.43:5000/api/wheather/change
+Content-Type: application/json
+
+{
+   "outSky" : "rainy"
 }

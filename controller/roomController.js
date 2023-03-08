@@ -91,7 +91,7 @@ class roomController {
       room.peopleNumber = room.peopleNumber + quanlity;
     } else if (type === CHANGE_PEOPLE_ROOM_TYPE.LEAVE) {
       if (quanlity >= room.peopleNumber) {
-        message = `All people is left ${room.name}.`;
+        message = `All people in ${room.name} is left.`;
         room.peopleNumber = 0;
       } else {
         message = `${quanlity} people is left ${room.name}.`;
