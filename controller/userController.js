@@ -61,7 +61,7 @@ class userController {
 
   async login(req, res) {
     const { username, password } = req.body;
-
+    console.log(username, password);
     if (!username || !password)
       return res.status(400).json({
         success: false,
@@ -88,7 +88,7 @@ class userController {
         {
           userID: user._id,
         },
-        process.env.ACCESS_TOKEN_SECRET
+        process.env.ACCESS_TOKEN_SECRET || "access_token"
       );
 
       res.json({
@@ -97,6 +97,7 @@ class userController {
         successToken,
       });
     } catch (error) {
+      console.log(error);
       return res.status(400).json({ success: false, message: "server error" });
     }
   }

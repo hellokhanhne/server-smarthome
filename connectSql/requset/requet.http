@@ -86,3 +86,22 @@ Content-Type: application/json
     "nameProduct":"Product",
     "idCategory_product" : "idCadddddxtteegory"
 }
+
+###
+post http://45.76.154.43:5000/api/rooms/change-people
+Content-Type: application/json
+
+{
+    "roomName" : "Metting Room",
+    "quanlity" : 1,
+    "type" : "LEAVE"
+}
+###
+post http://45.76.154.43:5000/api/rooms/change-people
+Content-Type: application/json
+
+{
+    "roomName" : "Bedroom 1",
+    "quanlity" : 1,
+    "type" : "LEAVE"
+}

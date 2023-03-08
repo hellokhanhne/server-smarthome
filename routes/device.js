@@ -3,7 +3,6 @@ const router = express.Router();
 const roomController = require("../controller/roomController");
 const checkToken = require("../middleware/checkToken");
 
-router.get("/", roomController.getRooms);
-router.post("/change-people", roomController.changePeopleRoom)
+router.post("/change-device-status", roomController.changeStatusDevice);
 
 module.exports = router;
